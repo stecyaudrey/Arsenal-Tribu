@@ -1,0 +1,202 @@
+body {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  width: 90%;
+  font-style: italic;
+  padding: 15px;
+  font-size: 17px;
+}
+
+
+.player-card img {
+  border-radius: 15px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+
+}
+p {
+  display: inline;
+}
+.font {
+  font-weight: bold;
+  color: red;
+  
+}
+.player-card {
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
+
+.player-card {
+  border-top: 5px solid #dd0000; /* Black */
+  border-right: 5px solid #dd0000; /* Red */
+  border-bottom: 5px solid #dd0000; /* Gold - German Flag Colors! */
+}
+
+.player-card h3 {
+  letter-spacing: 1px;
+  color: royalblue;
+  font-style: italic;
+}
+
+.team-links a {
+  text-decoration: none;
+  color: royalblue;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#searchInput {
+  width: 90%;
+  margin-top: 15px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-family: inherit; 
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #dd0000;
+}
+footer {
+  background-color: black;
+  color: white;
+  width: 90%;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+h2 {
+  background-image: linear-gradient(to right, red, black);
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+
+.nav-container {
+  position: sticky; /* This keeps it at the top */
+  top: 0;
+  background-color: white;
+  padding: 15px;
+  z-index: 1000; /* Keeps it above the player cards */
+  border-bottom: 3px solid pink;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media screen and (min-width: 800px){
+  body {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+  .player-card img {
+  width: 80%;
+  
+}
+
+
+
+
+
+
+
+
+/* 1. General Body Styling */
+body {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  width: 95%; /* Increased slightly for better mobile fit */
+  margin: 0 auto;
+  font-style: italic;
+  padding: 15px;
+  font-size: 17px;
+  background-color: #fdfdfd; /* Light off-white for better contrast */
+}
+
+/* 2. Grid Layout - This puts cards side-by-side */
+.squad-container1, .Squad-container2 {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to drop to next line */
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* 3. The Player Card */
+.player-card {
+  flex: 1 1 300px; /* Cards will be at least 300px wide */
+  max-width: 400px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: white;
+  border-top: 5px solid #dd0000;
+  border-right: 5px solid #dd0000;
+  border-bottom: 5px solid #dd0000;
+  border-radius: 0 15px 15px 0; /* Rounded corners only on the right */
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+}
+
+.player-card h3 {
+  letter-spacing: 1px;
+  color: royalblue;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+
+/* 4. Image Styling */
+.player-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px; /* Fixed height so cards stay even */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+/* 5. Text Elements */
+p {
+  display: block; /* Changed to block so "Nationality" stays above the value */
+  margin: 5px 0;
+}
+
+
+
+.font {
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+
+/* 6. Desktop/Large Screen View */
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 20px; /* 30px is a bit huge for body text, 20px is cleaner */
+    width: 85%;
+  }
+  
+  .player-card img {
+    height: 350px; /* Taller images for bigger screens */
+  }
+}
+
+
+
+
+
+
+
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
